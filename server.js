@@ -5,15 +5,16 @@
  ***/
 var http = require('http'),
     db = require('./config').db;
-http.createServer(function(req, res){
-    res.writeHead(200, {"content-type":"text/html;charset=utf8"});
+http.createServer(function(request, response){
+    response.writeHead(200, {"content-type":"text/html;charset=utf8"});
+    response.write("hello,cnode app engine!");	
     if(db){
-         testMongoDB(res);
-	}else{
-         res.end("hello,cnode app engine!");	
+         testMongoDB(response);
 	}
+	repsonse.end();
 }).listen(80);
 console.log("server started at port 80");
+
 /*** 
  * mongoDB测试示例函数。如果已经开启mongoDB，请先去config.js修改填入数据库名称用户名和密码。
  ***/
