@@ -1,5 +1,5 @@
 {
-   "name":"hello cnae",
-   "main":"./server.js",
-   "customHost": ["leavingme.net"]
+	"name": "hello cnae",
+	"main": "./index.js",
+	"customHost": ["leavingme.net"]
 }
