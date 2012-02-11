@@ -1,7 +1,7 @@
 {
     "name": "leavingme.net",
     "main": "./app.js",
-    "customHost": ["leavingme.net"],
+    "customHost": ["leavingme.net", "www.leavingme.net"],
     "version": "0.0.1",
     "private": true,
     "dependencies": {
